@@ -48,7 +48,7 @@ readr::write_csv(nycflights13::flights,path = "flights.csv")
 ```{python import data}
 
 heights = pd.read_csv("data/heights.csv")
-heights.head
+# heights.head
 
 ```
 
@@ -61,7 +61,7 @@ head(py$heights)
 
 ```{r but plot in R}
 library(ggplot2)
-py$heights
+
 ggplot(py$heights, aes(age, earn)) +
   geom_violin(aes(color=sex))
 ```
