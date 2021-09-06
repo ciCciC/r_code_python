@@ -1,6 +1,6 @@
 ---
 title: "Python Notebook"
-output: html_notebook
+output: rmarkdown::github_document
 ---
 
 
@@ -47,8 +47,14 @@ readr::write_csv(nycflights13::flights,path = "flights.csv")
 
 ```{python import data}
 
-flights = pd.read_csv("data/flights.csv")
 heights = pd.read_csv("data/heights.csv")
+heights.head
+
+```
+
+```{r}
+
+head(py$heights)
 
 ```
 
@@ -56,8 +62,8 @@ heights = pd.read_csv("data/heights.csv")
 ```{r but plot in R}
 library(ggplot2)
 py$heights
-ggplot(py$heights, aes(height, earn)) +
-  geom_point()
+ggplot(py$heights, aes(age, earn)) +
+  geom_violin(aes(color=sex))
 ```
 
 
