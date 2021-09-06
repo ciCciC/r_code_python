@@ -60,3 +60,9 @@ ggplot(py$heights, aes(height, earn)) +
   geom_point()
 ```
 
+
+```{ }
+Run in terminal the following to transform a Rmd extension to ipynb by using jupytext
+--> jupytext --to notebook some_notebook.Rmd
+```
+
