@@ -40,7 +40,7 @@ plt.show()
 <img src="some_notebook_files/figure-gfm/packages-1.png" width="672" />
 
 ``` r
-readr::write_csv(nycflights13::flights,path = "flights.csv")
+# readr::write_csv(nycflights13::flights,path = "flights.csv")
 ```
 
     ## Warning: The `path` argument of `write_csv()` is deprecated as of readr 1.4.0.
